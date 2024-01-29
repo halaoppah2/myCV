@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <div class="container-fliud bg-white">
+    <div class="container-fliud">
 
         <nav class="navbar navbar-expand-sm bg-info fixed-top">
             <div class="container-fluid">
@@ -115,7 +115,7 @@
                 <h4 style="background: black; color: white; text-align: left; padding: 10px; width: 100%; position: relative; top: 70px;"><b>Educational Background</b></h4>
             </div>
 
-            <div style="font-size: 12pt; position: relative; top: 80px; line-height: 10px;">
+            <div style="font-size: 12pt; position: relative; top: 80px; line-height: 20px;">
                 <p>2022 – 2026: University of Cape Coast, Cape Coast
                      <ul>
                         <li>Bachelor of Science (Information Technology) </li>
@@ -198,9 +198,18 @@
 
 <div class="row">
     <div class="co">
-        <footer style="background: rgb(255, 150, 112); text-align: center; margin-top: 140px; padding: 10px; width: 100%; height: auto; position: relative;"><b>&copy;2023, all right reserved.</b></footer>
+        <footer class="bg-info" style="text-align: center; margin-top: 140px; padding: 10px; width: 100%; height: auto; position: relative;"><b>&copy;<span id="year"></span>, all right reserved.</b></footer>
     </div>
 </div>
     
 </body>
+
+<script>
+
+let date = new Date();
+        year = date.getFullYear();
+        document.getElementById('year').innerHTML = year;
+
+</script>
+
 </html>
